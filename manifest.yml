@@ -1,6 +1,8 @@
 ---
 applications:
-- name: cf-nodejs
+- name: hello-node
   memory: 512M
   instances: 1
   random-route: true
+  stack: cflinuxfs2
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack.git
